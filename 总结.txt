@@ -1,0 +1,12 @@
+【build过程】：rimraf site && webpack --progress --hide-modules --colors --config build/webpack.prod.conf.js && cd site/static && mkdir vendors && cd ../../ && cp -r src/assets/* site/static/ && cp CNAME site/ && cp favicon.ico site/ && node build/common-nano-css.js site/static
+main是入口
+生成site整个站点
+
+【xbuild过程】：
+入口：/components/index.js
+打包成vux.js
+Css统一编译成vue.css
+编译生成组件js
+
+
+

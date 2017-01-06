@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="dist/vux.css" />
+    <script src="http://cdn.bootcss.com/vue/1.0.26/vue.min.js"></script>
+  <script src="dist/components/group/index.js"></script>
+  <script src="dist/components/cell/index.js"></script>
+</head>
+<body id="demo">
+<group>
+  <cell title="vue" value="cool"></cell>
+</group>
+<script>
+  Vue.component('group', vuxGroup)
+  Vue.component('cell', vuxCell)
+
+  new Vue({
+    el: '#demo'
+  })
+</script>
+</body>
+</html>

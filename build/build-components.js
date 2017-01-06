@@ -97,7 +97,7 @@ process.argv.forEach(function (val, index, array) {
     list = val
   }
 })
-
+//可以构建某些组件  ","号分隔
 if (list) {
   list.split(',').forEach(function (name) {
     build(name)
